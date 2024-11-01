@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Pace - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="resume">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="name">Joseph Pace</h1>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Lakeland, FL 33813</span>
+                    </div>
+                    <a href="tel:863-327-5473" class="contact-item" aria-label="Phone number">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>863-327-5473</span>
+                    </a>
+                    <a href="mailto:pokey.cat.123456@gmail.com" class="contact-item" aria-label="Email address">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>pokey.cat.123456@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <div class="summary">
+            Experienced self-employed web developer with expertise in frontend and backend development.
+            Demonstrated success in building high-traffic e-commerce platforms and custom web applications.
+            Proficient in programming languages such as C#, Golang, and JavaScript, and skilled in utilizing
+            PostgreSQL, NodeJS, Nginx, and various design tools. Also knowledgeable in electronic repair and
+            chemistry. Committed to delivering innovative solutions and constantly expanding skills to meet
+            industry demands.
+        </div>
+
+        <!-- Skills -->
+        <section class="section">
+            <h2 class="section-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+                Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skills-column">
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="skill-description">
+                            Expert in image editing, digital manipulation, and graphic design using Adobe Photoshop.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-description">
+                            Proficient in creating modern UI/UX designs and prototypes using Figma.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Golang</span>
+                        </div>
+                        <div class="skill-description">
+                            Experienced in Go programming for backend development and microservices.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Electronic Repair</span>
+                        </div>
+                        <div class="skill-description">
+                            Skilled in diagnosing and repairing various electronic devices and components.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Frontend & Backend</span>
+                        </div>
+                        <div class="skill-description">
+                            Full-stack development with expertise in modern web technologies and frameworks.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="skill-description">
+                            Creating mobile-first, responsive layouts using modern CSS techniques.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Communication</span>
+                        </div>
+                        <div class="skill-description">
+                            Excellent written and verbal communication skills for team collaboration.
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Illustrator</span>
+                        </div>
+                        <div class="skill-description">
+                            Vector graphics and illustration expertise using Adobe Illustrator.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-description">
+                            .NET development and enterprise application programming using C#.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-description">
+                            Advanced JavaScript programming including modern frameworks and tools.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Chemistry</span>
+                        </div>
+                        <div class="skill-description">
+                            Strong foundation in chemistry principles and laboratory techniques.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Cybersecurity</span>
+                        </div>
+                        <div class="skill-description">
+                            Implementation of security best practices and vulnerability assessment.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Customer Service</span>
+                        </div>
+                        <div class="skill-description">
+                            Professional client relationship management and support experience.
+                        </div>
+                    </div>
+                    <div class="skill-item" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <svg class="skill-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="skill-description">
+                            Effective collaboration and team leadership in development projects.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work History -->
+        <section class="section">
+            <h2 class="section-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Work History
+            </h2>
+            <div class="work-item">
+                <div class="work-header">
+                    <h3 class="work-title">Frontend & Backend Web Developer</h3>
+                    <span class="work-date">May 2020 - Current</span>
+                </div>
+                <ul class="work-list">
+                    <li>Developed high-traffic e-commerce platforms with optimized backend systems for performance and scalability</li>
+                    <li>Delivered custom web applications with responsive design and cross-platform compatibility</li>
+                    <li>Led security initiatives and integrated backend services to improve efficiency</li>
+                </ul>
+            </div>
+            <div class="work-item">
+                <div class="work-header">
+                    <h3 class="work-title">Tutor</h3>
+                    <span class="work-date">December 2022 - August 2024</span>
+                </div>
+                <div class="work-location">Lakeland, FL</div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                Education
+            </h2>
+            <div class="education-item">
+                <div class="education-title">Associate of Arts, Expected in August 2025</div>
+                <div class="education-school">Polk State College, Winter Haven, FL</div>
+            </div>
+            <div class="education-item">
+                <div class="education-title">BACHELOR OF NUCLEAR ENGINEER</div>
+                <div class="education-school">University of Florida</div>
+            </div>
+        </section>
+
+        <!-- Websites, Portfolios, Profiles -->
+        <section class="section">
+            <h2 class="section-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                Websites, Portfolios, Profiles
+            </h2>
+            <div class="link-item">
+                <a href="https://www.linkedin.com/in/joseph-pace-1b81912b0" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="link-text">
+                    www.linkedin.com/in/joseph-pace-1b81912b0
+                </a>
+            </div>
+        </section>
+
+        <!-- Current Status -->
+        <section class="section">
+            <h2 class="section-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                Current Status
+            </h2>
+            <div class="status-item">
+                COLLEGE STUDENT
+            </div>
+        </section>
+
+        <!-- Leadership and Activities -->
+        <section class="section">
+            <h2 class="section-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+                Leadership and Activities
+            </h2>
+            <div class="leadership-item">
+                <ul class="work-list">
+                    <li><span class="font-bold">Leadership:</span> Led a cybersecurity club, organizing workshops and providing technical guidance</li>
+                    <li><span class="font-bold">Teamwork:</span> Managed collaborative projects in both web development and cybersecurity</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleSkill(element) {
+            // Close any currently expanded skills
+            const currentlyExpanded = document.querySelector('.skill-item.expanded');
+            if (currentlyExpanded && currentlyExpanded !== element) {
+                currentlyExpanded.classList.remove('expanded');
+            }
+            
+            // Toggle the clicked skill
+            element.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>

@@ -391,3 +391,75 @@ body {
         max-width: 60rem;
     }
 }
+
+
+
+.shortcut-hint {
+    position: fixed;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 11px;
+    color: #94a3b8;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 4px 8px;
+    border-radius: 4px;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+    z-index: 1000;
+    white-space: nowrap;
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+}
+
+/* Hidden by default */
+.print-spacer {
+    display: none;
+}
+
+@media print {
+    @page {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body {
+        margin: 0 !important;
+        background: none !important;
+        color: black !important;
+    }
+
+    .resume {
+        padding: 15mm !important;
+        background: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Show print spacer before Work History */
+    .print-spacer {
+        display: block !important;
+        height: 30mm !important; /* Adjust this value to control spacing */
+        margin: 0 !important;
+        padding: 0 !important;
+        break-after: avoid !important;
+    }
+
+    /* Hide all decorative elements */
+    .shortcut-hint,
+    .shadow,
+    .background-element {
+        display: none !important;
+    }
+
+    /* Ensure good contrast */
+    h1, h2, h3, p, li, .contact-info {
+        color: black !important;
+    }
+
+    /* Clean link appearance */
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+}

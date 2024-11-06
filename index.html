@@ -329,5 +329,39 @@
             element.classList.toggle('expanded');
         }
     </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add the print spacer before Work History section
+        const workHistory = document.querySelector('#work-history, .work-history');
+        if (workHistory) {
+            const spacer = document.createElement('div');
+            spacer.className = 'print-spacer';
+            workHistory.parentNode.insertBefore(spacer, workHistory);
+        }
+
+        // Add shortcut hint
+        const hint = document.createElement('div');
+        hint.className = 'shortcut-hint';
+        hint.innerHTML = `
+            <div class="shortcut-item">
+                <span class="kbd">P</span> print
+            </div>
+        `;
+        document.body.appendChild(hint);
+
+        // Handle keyboard shortcut
+        document.addEventListener('keydown', function(event) {
+            if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') {
+                return;
+            }
+
+            if (event.key.toLowerCase() === 'p') {
+                event.preventDefault();
+                window.print();
+            }
+        });
+    });
+</script>
 </body>
 </html>
